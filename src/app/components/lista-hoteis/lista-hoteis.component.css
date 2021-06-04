@@ -1,0 +1,9 @@
+hr{
+    border-color:#aaa;
+    box-sizing:border-box;
+    width:100%;  
+}
+
+.hotel{
+    width: 50vw;
+}

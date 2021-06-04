@@ -1,0 +1,8 @@
+<div *ngFor="let hotel of listaHoteis;let i= index">
+    <div class="d-flex justify-content-md-between hotel">
+        <p class="text-descricao"> {{ hotel.descricao }} </p>
+        <p class="text-valor">R$ {{ hotel.valor }} </p>
+    </div>
+    <button type="button" (click)="selecionarHotel(hotel)" class="btn btn-primary">Visualizar</button>
+    <hr />
+</div>

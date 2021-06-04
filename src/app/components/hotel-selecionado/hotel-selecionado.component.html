@@ -1,0 +1,30 @@
+<div class="container d-flex">
+    <p class="mr-5">
+        <b>Endereço</b>: 
+    </p>
+    <p class="ml-3">
+        {{ hotelSelecionado.logradouro }}, {{ hotelSelecionado.numero_logradouro }} - {{ hotelSelecionado.bairro }}, {{ hotelSelecionado.cidade }} - {{ hotelSelecionado.uf }}, {{ hotelSelecionado.cep }} 
+    </p>
+</div>
+
+<div class="container d-flex">
+    <p class="mr-5">
+        <b>Telefone</b>: 
+    </p>
+    <p class="ml-3">
+        ({{ hotelSelecionado.ddd }}) {{ hotelSelecionado.telefone }}
+    </p>
+</div>
+
+<div class="container d-flex">
+    <p class="mr-5">
+        <b>Preço</b>: 
+    </p>
+    <p class="ml-3">
+        R$ {{ hotelSelecionado.valor }}
+    </p>
+</div>
+
+<div class="container">
+    <button type="button" (click)="voltar()" class="btn btn-primary">Voltar</button>
+</div>
